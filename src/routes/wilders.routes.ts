@@ -1,6 +1,6 @@
-const router = require("express").Router();
-import { Response } from "express";
+import { Router, Response } from "express";
 import WilderController from "../controllers/wilders.controllers";
+const router = Router()
 
 router.get("/", WilderController.getWilders);
 router.get("/:id", WilderController.getWildersById);
